@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pravat Dash — SOC Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,14 +14,21 @@
   <!-- NAV -->
   <nav class="nav">
     <span class="nav-name">Pravat Dash</span>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#writeups">Writeups</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certs">Certs</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#writeups">Writeups</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
   </nav>
 
   <!-- HEADER -->
@@ -29,35 +36,31 @@
     <div class="header-inner">
 
       <div class="header-photo-wrapper">
-        <div class="header-photo" id="profilePhotoArea">
+        <div class="header-photo">
           <div class="photo-placeholder">
             <span class="photo-initials">PD</span>
-            <span class="photo-hint">Add your photo<br><small>Replace src in &lt;img&gt; tag</small></span>
           </div>
-          <!-- TO USE YOUR PHOTO: replace the div above with:
-               <img src="your-photo.jpg" alt="Pravat Dash" />
-          -->
+          <!-- Replace above div with: <img src="photo.jpg" alt="Pravat Dash" /> -->
         </div>
       </div>
 
       <div class="header-text">
-        <p class="header-label">Blue Team / SOC</p>
+        <p class="header-label">Blue Team · SOC Analyst</p>
         <h1 class="header-name">Pravat Dash</h1>
-        <p class="header-role">SOC Analyst (Blue Team) &nbsp;·&nbsp; BTL1 Certified</p>
+        <p class="header-role">BTL1 Certified &nbsp;·&nbsp; CyberDefenders Top 150 Global, Top 5 India</p>
 
         <div class="header-badges">
           <span class="badge badge-cert">BTL1 — 100%</span>
-          <span class="badge badge-rank">CyberDefenders Global #129</span>
-          <span class="badge badge-rank">India #5</span>
-          <span class="badge badge-streak">72-day streak</span>
+          <span class="badge badge-rank">#129 Global</span>
+          <span class="badge badge-rank">#5 India</span>
         </div>
 
         <div class="header-links">
+          <a href="Pravat_Dash_SOC_Analyst_Resume.pdf" download class="link-pill link-pill-primary">↓ Resume</a>
           <a href="https://github.com/pd027" target="_blank" rel="noopener" class="link-pill">GitHub</a>
           <a href="https://www.linkedin.com/in/pravatdash27" target="_blank" rel="noopener" class="link-pill">LinkedIn</a>
           <a href="https://medium.com/@RootPi27" target="_blank" rel="noopener" class="link-pill">Medium</a>
           <a href="https://cyberdefenders.org/p/RootPi/" target="_blank" rel="noopener" class="link-pill">CyberDefenders</a>
-          <a href="mailto:pravatdash2701@gmail.com" class="link-pill">Email</a>
         </div>
       </div>
 
@@ -70,9 +73,9 @@
     <section class="section" id="about">
       <h2 class="section-title">About</h2>
       <div class="section-body">
-        <p>BTL1-certified with hands-on experience in alert triage, log analysis, and incident investigation. Completed 50+ labs on CyberDefenders across endpoint forensics, network analysis, memory forensics, and threat hunting — ranked Top 150 globally, Top 5 in India.</p>
-        <p>Work focuses on understanding attacker behavior, not just detecting it. Tools used: Splunk, Elastic, Wireshark, Volatility, Autopsy.</p>
-        <p>Currently a CS undergrad at SRMIST (Cybersecurity), graduating 2027. CGPA 9.13/10. Looking for SOC / Blue Team roles.</p>
+        <p>BTL1-certified SOC analyst with hands-on experience in alert triage, log analysis, and incident investigation. Investigated 50+ real-world scenarios on CyberDefenders — covering endpoint forensics, memory analysis, and network-based attacks.</p>
+        <p>Work with Splunk, Elastic SIEM, Wireshark, Volatility, and Autopsy. Focus on understanding attacker behavior and reconstructing attack timelines, not just flagging alerts.</p>
+        <p>CS undergrad at SRMIST (Cybersecurity), graduating 2027. Open to SOC Analyst and Blue Team roles.</p>
       </div>
     </section>
 
@@ -92,7 +95,7 @@
         </div>
 
         <div class="skill-group">
-          <h3 class="skill-group-title">SIEM / Logs</h3>
+          <h3 class="skill-group-title">SIEM / Log Analysis</h3>
           <ul>
             <li>Splunk</li>
             <li>Elastic Stack (Kibana)</li>
@@ -147,11 +150,12 @@
     <section class="section" id="experience">
       <h2 class="section-title">Hands-on Work</h2>
 
+      <!-- CyberDefenders -->
       <div class="exp-block">
         <div class="exp-header">
           <div>
             <span class="exp-org">CyberDefenders</span>
-            <span class="exp-role">SOC Analyst Tier 1 Track — Completed Mar 2026</span>
+            <span class="exp-role">SOC Analyst Tier 1 Track &nbsp;·&nbsp; Completed Mar 2026</span>
           </div>
           <div class="exp-stats">
             <span class="stat">50+ labs</span>
@@ -160,32 +164,15 @@
           </div>
         </div>
         <ul class="exp-list">
-          <li>Investigated incidents across Splunk, Elastic SIEM, Volatility, and Wireshark — covering endpoint, memory, and network forensics.</li>
-          <li>Reconstructed multi-stage attack timelines: lateral movement, persistence, data exfiltration, C2 communication.</li>
-          <li>Detected Kerberoasting, LOLBAS abuse, ransomware behavior, supply-chain compromise, and APT activity by correlating logs and artifacts.</li>
-          <li>Mapped findings to MITRE ATT&amp;CK and documented IOCs for each investigation.</li>
-          <li>Worked with real-world malware families: REvil, Amadey, DanaBot, XWorm, Andromeda Bot, Tusk Infostealer.</li>
+          <li>Investigated multi-stage incidents across Splunk, Elastic SIEM, and Wireshark — covering endpoint, memory, and network vectors.</li>
+          <li>Reconstructed attack timelines involving lateral movement, persistence, C2 communication, and data exfiltration.</li>
+          <li>Detected Kerberoasting, LOLBAS abuse, ransomware behavior, and APT activity by correlating logs and host artifacts.</li>
+          <li>Analyzed real-world malware families including REvil, Amadey, DanaBot, and XWorm — mapped findings to MITRE ATT&amp;CK.</li>
         </ul>
-
-        <div class="lab-tags-label">Notable labs completed:</div>
-        <div class="lab-tags">
-          <span class="lab-tag">ShadowRoast</span>
-          <span class="lab-tag">GoldenSpray</span>
-          <span class="lab-tag">WebLogic</span>
-          <span class="lab-tag">Kerberoasted</span>
-          <span class="lab-tag">FalconEye</span>
-          <span class="lab-tag">EscapeRoom</span>
-          <span class="lab-tag">CorporateSecrets</span>
-          <span class="lab-tag">AzureHunt</span>
-          <span class="lab-tag">Phishy</span>
-          <span class="lab-tag">WireDive</span>
-          <span class="lab-tag">Amadey APT-C-36</span>
-          <span class="lab-tag">Poisoned PyTorch</span>
-          <span class="lab-tag">AWSRaid</span>
-          <span class="lab-tag">+38 more</span>
-        </div>
+        <a href="https://cyberdefenders.org/p/RootPi/" target="_blank" rel="noopener" class="exp-profile-link">View Full Profile →</a>
       </div>
 
+      <!-- WE4YOU -->
       <div class="exp-block">
         <div class="exp-header">
           <div>
@@ -195,9 +182,8 @@
         </div>
         <ul class="exp-list">
           <li>Rebuilt a production platform connecting visually impaired students with volunteer scribes across India.</li>
-          <li>Implemented RBAC with role separation for seekers, scribes, and admins — practical access control design.</li>
-          <li>Applied input validation, controlled data exposure, and secure API integration (Twilio, Gupshup, OpenStreetMap).</li>
-          <li>Maintained application stability for real users while iterating on security and feature improvements.</li>
+          <li>Implemented RBAC with least-privilege role separation for seekers, scribes, and admins.</li>
+          <li>Applied input validation, controlled data exposure, and audit logging across all user-facing endpoints.</li>
         </ul>
       </div>
 
@@ -214,20 +200,16 @@
             <span class="cert-issuer">Security Blue Team &nbsp;·&nbsp; April 2026 &nbsp;·&nbsp; Score: 100%</span>
             <span class="cert-detail">24-hour practical IR exam. Domains: Phishing Analysis, Threat Intel, DFIR, SIEM, Incident Response.</span>
           </div>
-          <a href="Blue_Team_Level_1__BTL1_-Certification.pdf" download="Pravat_Dash_BTL1_Certificate.pdf" class="cert-download">
-            ↓ Download Certificate
-          </a>
+          <a href="Blue_Team_Level_1__BTL1_-Certification.pdf" download="BTL1_Certificate_Pravat_Dash.pdf" class="cert-download">↓ Certificate</a>
         </div>
 
         <div class="cert-item">
           <div class="cert-info">
             <span class="cert-name">Google Cybersecurity Professional Certificate</span>
             <span class="cert-issuer">Coursera &nbsp;·&nbsp; February 2026</span>
-            <span class="cert-detail">9 courses: Detection & Response, SIEM, Python, Linux, SQL, IDS.</span>
+            <span class="cert-detail">9 courses — Detection &amp; Response, SIEM, Python, Linux, SQL, IDS.</span>
           </div>
-          <a href="Coursera_JUK0H4J45JXB__1_.pdf" download="Pravat_Dash_Google_Cybersecurity_Certificate.pdf" class="cert-download">
-            ↓ Download Certificate
-          </a>
+          <a href="Coursera_JUK0H4J45JXB__1_.pdf" download="Google_Cybersecurity_Certificate_Pravat_Dash.pdf" class="cert-download">↓ Certificate</a>
         </div>
 
         <div class="cert-item">
@@ -257,12 +239,11 @@
             <span class="project-name">BeMyScribe — Secure Backend</span>
             <span class="project-date">Jun 2025</span>
           </div>
-          <p class="project-desc">Production platform connecting visually impaired students with volunteer scribes. Built the backend from scratch with security as a core requirement, not an afterthought.</p>
+          <p class="project-desc">Production platform connecting visually impaired students with volunteer scribes. Built the backend with security as a core design requirement.</p>
           <ul class="project-points">
             <li>RBAC with least-privilege access across three user roles</li>
             <li>Input validation, controlled data exposure, audit logging</li>
             <li>Secure API integrations: Twilio, Gupshup, OpenStreetMap</li>
-            <li>Automated PDF certificate generation with role-based access control</li>
           </ul>
           <div class="project-tech">
             <span>Python (Flask)</span>
@@ -274,10 +255,10 @@
 
         <div class="project-item">
           <div class="project-header">
-            <span class="project-name">CyberDefenders Investigation Lab Portfolio</span>
-            <span class="project-date">2026</span>
+            <span class="project-name">CyberDefenders Investigation Portfolio</span>
+            <span class="project-date">2025–2026</span>
           </div>
-          <p class="project-desc">50+ completed investigations documented on CyberDefenders. Covers endpoint forensics, network analysis, memory forensics, threat hunting, and threat intelligence across real-world incident scenarios.</p>
+          <p class="project-desc">50+ completed investigations documented across endpoint forensics, network analysis, memory forensics, and threat hunting. All findings mapped to MITRE ATT&amp;CK.</p>
           <div class="project-tech">
             <span>Splunk</span>
             <span>Elastic SIEM</span>
@@ -295,32 +276,32 @@
     <!-- WRITEUPS -->
     <section class="section" id="writeups">
       <h2 class="section-title">Writeups</h2>
-      <p class="section-intro">Published 5 investigation writeups on Medium. Focus: DFIR, malware behavior, network forensics.</p>
+      <p class="section-intro">5 investigation writeups on Medium — DFIR, malware behavior, and network forensics.</p>
       <div class="writeup-list">
 
         <a href="https://medium.com/@RootPi27" target="_blank" rel="noopener" class="writeup-item">
           <div class="writeup-title">Phishing Analysis Lab — Blue Team Lab Walkthrough</div>
-          <div class="writeup-meta">Apr 2026 &nbsp;·&nbsp; 3 min read</div>
+          <div class="writeup-meta">Apr 2026 &nbsp;·&nbsp; 3 min</div>
         </a>
 
         <a href="https://medium.com/@RootPi27" target="_blank" rel="noopener" class="writeup-item">
           <div class="writeup-title">REvil — GOLD SOUTHFIELD Lab Walkthrough</div>
-          <div class="writeup-meta">Feb 2026 &nbsp;·&nbsp; 7 min read &nbsp;·&nbsp; Threat Hunting</div>
+          <div class="writeup-meta">Feb 2026 &nbsp;·&nbsp; Threat Hunting</div>
         </a>
 
         <a href="https://medium.com/@RootPi27" target="_blank" rel="noopener" class="writeup-item">
           <div class="writeup-title">RetailBreach Lab Walkthrough</div>
-          <div class="writeup-meta">Feb 2026 &nbsp;·&nbsp; 7 min read &nbsp;·&nbsp; Network Forensics</div>
+          <div class="writeup-meta">Feb 2026 &nbsp;·&nbsp; Network Forensics</div>
         </a>
 
         <a href="https://medium.com/@RootPi27" target="_blank" rel="noopener" class="writeup-item">
           <div class="writeup-title">NerisBot Lab Walkthrough</div>
-          <div class="writeup-meta">Feb 2026 &nbsp;·&nbsp; 7 min read &nbsp;·&nbsp; Threat Hunting</div>
+          <div class="writeup-meta">Feb 2026 &nbsp;·&nbsp; Threat Hunting</div>
         </a>
 
         <a href="https://medium.com/@RootPi27" target="_blank" rel="noopener" class="writeup-item">
           <div class="writeup-title">Amadey — APT-C-36 Lab Walkthrough</div>
-          <div class="writeup-meta">Feb 2026 &nbsp;·&nbsp; 7 min read &nbsp;·&nbsp; Endpoint Forensics</div>
+          <div class="writeup-meta">Feb 2026 &nbsp;·&nbsp; Endpoint Forensics</div>
         </a>
 
       </div>
@@ -360,6 +341,24 @@
   <footer class="footer">
     <span>Pravat Dash &nbsp;·&nbsp; SOC Analyst &nbsp;·&nbsp; Chennai, India</span>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+
+    // Check saved preference or system default
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      html.setAttribute('data-theme', 'dark');
+    }
+
+    toggle.addEventListener('click', () => {
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    });
+  </script>
 
 </body>
 </html>
