@@ -133,76 +133,12 @@ body {
 }
 
 .header-inner {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-}
-
-/* Profile Photo */
-.header-photo-wrapper {
-  flex-shrink: 0;
-}
-
-.header-photo {
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: var(--bg-alt);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.header-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   display: block;
-}
-
-.photo-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  cursor: pointer;
-  padding: 8px;
-}
-
-.photo-initials {
-  font-family: var(--mono);
-  font-size: 22px;
-  font-weight: 500;
-  color: var(--accent);
-  display: block;
-  line-height: 1;
-}
-
-.photo-hint {
-  font-size: 9px;
-  color: var(--text-faint);
-  margin-top: 6px;
-  line-height: 1.3;
-  display: none;
-}
-
-.header-photo:hover .photo-hint {
-  display: block;
-}
-
-.header-photo:hover .photo-initials {
-  font-size: 13px;
 }
 
 /* Header text */
 .header-text {
-  flex: 1;
+  width: 100%;
 }
 
 .header-label {
@@ -761,11 +697,6 @@ main {
 
   .header {
     padding: 36px 20px 40px;
-  }
-
-  .header-inner {
-    flex-direction: column;
-    gap: 24px;
   }
 
   .header-name {
