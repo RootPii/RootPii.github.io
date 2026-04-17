@@ -134,14 +134,10 @@ body {
 
 
 .header-inner {
-  max-width: 720px;
-  margin: 0 auto;
-}
-/* .header-inner {
   display: flex;
   gap: 40px;
   align-items: flex-start;
-} */
+}
 
 /* Profile Photo */
 .header-photo-wrapper {
